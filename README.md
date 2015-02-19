@@ -13,4 +13,6 @@ The ETL directory contains a distributed tape processing and message extraction 
 5.	WINE accesses the tape files on HDFS using a HDFS NFS Gateway (/mnt/nfs_hdfs -> Z: in wine)
 6.	WINE writes extracted messages to HDFS using another HDFS Gateway
 
-To help with the network bandwidth multiple HDFS NFS Gateways should be setup and configured for each worker node.
+#NOTE:
+* NxCore Header Files and DLL are not included here. They will be included with NxCore Historical Tape files.
+* To help with the network bandwidth multiple HDFS NFS Gateways should be setup and configured for each worker node.
