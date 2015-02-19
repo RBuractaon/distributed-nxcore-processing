@@ -5,6 +5,7 @@ The following project is used to decompress NxCore Historical Tape files (highly
 
 
 The ETL directory contains a distributed tape processing and message extraction using Hadoop. Using MapReduce through a hive streaming of a bash script.
+
 1.	NxCore tape files are uploaded to HDFS.
 2.	A table is created containing the date and filename of each tape
 3.	A hive streaming of bash script is used to distribute each file to a mapper
