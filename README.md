@@ -5,11 +5,11 @@ The following project is used to decompress NxCore Historical Tape files (highly
 
 
 The ETL directory contains a distributed tape processing and message extraction using Hadoop. Using MapReduce through a hive streaming of a bash script.
-1	NxCore tape files are uploaded to HDFS.
-2	A table is created containing the date and filename of each tape
-3	A hive streaming of bash script is used to distribute each file to a mapper
-4	The script calls WINE to execute the tape processor windows executable file. This uses the Nanex, LLC proprietary .DLL to decompress the binary tape file
-5	WINE accesses the tape files on HDFS using a HDFS NFS Gateway (/mnt/nfs_hdfs -> Z: in wine)
-6	WINE writes extracted messages to HDFS using another HDFS Gateway
+1.	NxCore tape files are uploaded to HDFS.
+2.	A table is created containing the date and filename of each tape
+3.	A hive streaming of bash script is used to distribute each file to a mapper
+4.	The script calls WINE to execute the tape processor windows executable file. This uses the Nanex, LLC proprietary .DLL to decompress the binary tape file
+5.	WINE accesses the tape files on HDFS using a HDFS NFS Gateway (/mnt/nfs_hdfs -> Z: in wine)
+6.	WINE writes extracted messages to HDFS using another HDFS Gateway
 
 To help with the network bandwidth multiple HDFS NFS Gateways should be setup and configured for each worker node.
