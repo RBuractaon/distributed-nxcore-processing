@@ -15,5 +15,5 @@ The ETL directory contains a distributed tape processing and message extraction 
 
 ---
 #####NOTE:
-* NxCore Header Files and DLL are not included here. They will be included with NxCore Historical Tape files.
+* NxCore Header Files and DLL are not included here. They will should be included with the purchase of NxCore Historical Tape files.
 * To help with the network bandwidth multiple HDFS NFS Gateways should be setup and configured for each worker node.
